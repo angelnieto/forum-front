@@ -1,0 +1,15 @@
+<h1>Categories</h1>
+<table>
+    <thead>
+        <tr><th>Name</th></tr>
+    </thead>
+    <tbody *ngIf="categories">
+
+        <tr *ngFor="let category of categories; let i=index">
+            <td (click)="getMessages(category.id)">{{category.description}}</td>
+        </tr>
+    </tbody>
+</table>
+<section>
+    <button type="button" (click)="router.navigate(['/category'])">Add Category</button>
+</section>

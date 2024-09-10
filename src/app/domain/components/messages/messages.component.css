@@ -1,0 +1,27 @@
+th{
+    border: 0.11rem solid green;
+    color: white;
+    font-size: large;
+    background-color:grey; 
+}
+
+h1, table, section{
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0; 
+}
+td{
+    border: 0.1rem solid yellow;
+}
+button:hover{
+    cursor: pointer;
+}
+button{
+    margin: 0 1rem;
+}
+td:first-child{
+    width: 70%;
+}
+td:nth-child(2), tr:last-child{
+    width: 15%;
+}

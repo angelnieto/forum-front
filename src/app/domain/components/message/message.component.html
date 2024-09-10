@@ -1,0 +1,17 @@
+<h1>Insert a New Message</h1>
+<form (ngSubmit)="save()" [formGroup]="formulary" >
+
+  <section>
+    <label>Author : </label>
+    <input type="text" formControlName="author">
+  </section>
+  <section>
+    <label>Text : </label>
+    <textarea formControlName="text"></textarea>
+  </section>
+  <section>
+    <button type="button" (click)="back()">Cancel</button>
+    <button type="submit" [disabled]="!formulary.valid">Add Message</button>
+  </section>
+
+</form>  

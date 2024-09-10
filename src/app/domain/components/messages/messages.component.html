@@ -1,0 +1,17 @@
+<h1>List of <span *ngIf="category">{{ category.description }}</span> messages</h1>
+<table>
+  <thead>
+      <tr><th>Text</th><th>Author</th><th>Time</th></tr>
+  </thead>
+  <tbody *ngIf="messages">
+      <tr *ngFor="let message of messages; let i=index">
+          <td>{{message.text}}</td>
+          <td>{{message.author}}</td>
+          <td>{{message.date | date: 'MM/dd/yyyy HH:mm'}}</td>
+      </tr>
+  </tbody>
+</table>
+<section>
+  <button type="button" (click)="router.navigate(['/categories'])">Back To Categories</button>
+  <button type="button" (click)="newMessage()">Add Message</button>
+</section>

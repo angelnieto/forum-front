@@ -1,0 +1,13 @@
+<h1>Insert a New Category</h1>
+<form (ngSubmit)="save()" [formGroup]="formulary" >
+
+  <label>Name : </label>
+  <input type="text" formControlName="description">
+  <section>
+    <button type="button" (click)="router.navigate(['/categories'])">Cancel</button>
+    <button type="submit" [disabled]="!formulary.valid">Add Category</button>
+  </section>
+
+</form>  
+
+

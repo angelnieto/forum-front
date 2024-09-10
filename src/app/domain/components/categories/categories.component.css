@@ -1,0 +1,22 @@
+th{
+    border: 0.11rem solid green;
+    color: white;
+    font-size: large;
+    background-color:grey; 
+}
+
+h1, table, section{
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0; 
+}
+td{
+    border: 0.1rem solid yellow;
+}
+tr:hover{
+    background-color:yellow; 
+    font-weight: bold;
+}
+tr:hover, button:hover{
+    cursor: pointer;
+}
